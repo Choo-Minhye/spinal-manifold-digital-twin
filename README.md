@@ -1,10 +1,13 @@
 # Spinal Manifold Digital Twin
 
-Code accompanying "Recurrent latent dynamics in spinal circuits enable a
-digital twin of autonomic state transitions" (iScience). Reconstructs a
-circular neural manifold from spinal intermediolateral nucleus (IML)
-population activity and embeds it as a recurrent reservoir to
-generatively decode blood pressure (BP).
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.isci.2026.117971-blue)](https://doi.org/10.1016/j.isci.2026.117971)
+[![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.23409705.svg)](https://doi.org/10.5281/zenodo.23409705)
+
+Code accompanying "[Recurrent latent dynamics in spinal circuits enable a
+digital twin of autonomic state transitions](https://doi.org/10.1016/j.isci.2026.117971)"
+(*iScience* 29, 117971, 2026). Reconstructs a circular neural manifold from
+spinal intermediolateral nucleus (IML) population activity and embeds it as
+a recurrent reservoir to generatively decode blood pressure (BP).
 
 ## Data
 
@@ -30,10 +33,8 @@ generatively decode blood pressure (BP).
 | `forceregression_compareCNN.py` | 6D | CNN baseline for the same decoding comparison |
 | `anal_revi.py` | Supplementary | Isomap vs. PCA / LLE / Autoencoder comparison (embedding, persistent homology, geodesic preservation, BP fit) |
 
-The script-to-figure mapping above was reconstructed from each script's
-content against the figure legends; please double-check it against your
-own records before publishing, and feel free to add a one-line comment
-at the top of each script noting the figure it produces.
+Figure numbers refer to the published article. Supplementary analyses
+correspond to the Supplementary Information of the same article.
 
 ## Requirements
 
@@ -46,6 +47,27 @@ at the top of each script noting the figure it produces.
 
 If you use this code, please cite:
 
-> Choo et al,. Recurrent latent dynamics in spinal circuits enable a
-> digital twin of autonomic state transitions. *iScience* (2026).
-> DOI: not yet
+> Choo, M., Cho, M., Lee, J., Oh, C., Hong, S., Heo, C., Shon, Y.M., and
+> Park, S. (2026). Recurrent latent dynamics in spinal circuits enable a
+> digital twin of autonomic state transitions. *iScience* 29, 117971.
+> https://doi.org/10.1016/j.isci.2026.117971
+
+M. Choo and M. Cho contributed equally to this work.
+
+```bibtex
+@article{choo2026recurrent,
+  title   = {Recurrent latent dynamics in spinal circuits enable a digital twin of autonomic state transitions},
+  author  = {Choo, Minhye and Cho, Mingeun and Lee, Jiho and Oh, Changhwa and Hong, Sungjun and Heo, Chaewon and Shon, Young-Min and Park, Sungmin},
+  journal = {iScience},
+  volume  = {29},
+  number  = {11},
+  pages   = {117971},
+  year    = {2026},
+  doi     = {10.1016/j.isci.2026.117971},
+  pmid    = {42990874},
+  pmcid   = {PMC13734804}
+}
+```
+
+The exact code version used in the article is archived on Zenodo:
+[10.5281/zenodo.23409705](https://doi.org/10.5281/zenodo.23409705)
